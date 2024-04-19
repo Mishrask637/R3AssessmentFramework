@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-17T20:23:22 IST" name="Default suite" finished-at="2024-04-17T20:23:24 IST" duration-ms="1815">
+    <groups>
+    </groups>
+    <test started-at="2024-04-17T20:23:22 IST" name="Default test" finished-at="2024-04-17T20:23:24 IST" duration-ms="1815">
+      <class name="apimethods.GetUSDRates">
+        <test-method signature="extractResultInPojoClass()[pri:0, instance:apimethods.GetUSDRates@15c43bd9]" started-at="2024-04-17T20:23:22 IST" name="extractResultInPojoClass" finished-at="2024-04-17T20:23:24 IST" duration-ms="1794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractResultInPojoClass -->
+      </class> <!-- apimethods.GetUSDRates -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
