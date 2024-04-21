@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-17T20:23:22 IST" name="Default suite" finished-at="2024-04-17T20:23:24 IST" duration-ms="1815">
+  <suite started-at="2024-04-20T21:34:36 IST" name="Default suite" finished-at="2024-04-20T21:34:45 IST" duration-ms="9639">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-17T20:23:22 IST" name="Default test" finished-at="2024-04-17T20:23:24 IST" duration-ms="1815">
-      <class name="apimethods.GetUSDRates">
-        <test-method signature="extractResultInPojoClass()[pri:0, instance:apimethods.GetUSDRates@15c43bd9]" started-at="2024-04-17T20:23:22 IST" name="extractResultInPojoClass" finished-at="2024-04-17T20:23:24 IST" duration-ms="1794" status="PASS">
+    <test started-at="2024-04-20T21:34:36 IST" name="Default test" finished-at="2024-04-20T21:34:45 IST" duration-ms="9639">
+      <class name="runner.CurrencyConverterRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:36 IST" name="setUpClass" finished-at="2024-04-20T21:34:42 IST" duration-ms="6407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2aa07d80]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extractResultInPojoClass -->
-      </class> <!-- apimethods.GetUSDRates -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T21:34:44 IST" duration-ms="1976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if the api is giving a valid reponse, Status and Status Code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Currency Converter Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T21:34:44 IST" duration-ms="300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if the api is giving a invalid reponse"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Currency Converter Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T21:34:45 IST" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the currency value in USD"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Currency Converter Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T21:34:45 IST" duration-ms="428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the api JSON schema"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Currency Converter Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CurrencyConverterRunner@9597028]" started-at="2024-04-20T21:34:45 IST" name="tearDownClass" finished-at="2024-04-20T21:34:45 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CurrencyConverterRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

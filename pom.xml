@@ -46,19 +46,21 @@
 	    <scope>test</scope>
 	</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 	<dependency>
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-java</artifactId>
-	    <version>7.16.1</version>
+	    <version>7.17.0</version>
 	</dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 	<dependency>
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-testng</artifactId>
-	    <version>7.16.1</version>
+	    <version>7.17.0</version>
 	</dependency>
+
 
 	<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 	<dependency>
@@ -68,4 +70,20 @@
 	</dependency>
 
   </dependencies>
+
+<build>
+    <pluginManagement>
+      <plugins> 
+			<plugin>
+			  <groupId>net.masterthought</groupId>
+			  <artifactId>cucumber-reporting</artifactId>
+			  <version>4.7.2</version>
+			  <configuration>
+			    <outputDirectory>target/cucumber-reports</outputDirectory>
+			    <jsonReport>target/cucumber-reports/Cucumber.json</jsonReport>
+			  </configuration>
+			</plugin>
+      </plugins>
+    </pluginManagement>
+</build>
 </project>
