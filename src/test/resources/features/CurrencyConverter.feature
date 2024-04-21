@@ -1,7 +1,5 @@
-@tag
 Feature: Currency Converter Feature
 
-  @tag1
   Scenario: Verify if the api is giving a valid reponse, Status and Status Code
     Given I have an API URL
     When I use get method to hit the api
@@ -14,7 +12,6 @@ Feature: Currency Converter Feature
     Then I get a invalid json response with status other than "Success"
     And I verify the error_type as "unsupported-code"
 
-  @tag2
   Scenario Outline: Get the currency value in USD
     Given I have an API URL
     When I use get method to hit the api
