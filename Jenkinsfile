@@ -68,7 +68,7 @@ stages{
         {
             steps{
                 script{
-                cucumber '**/reports/json/*.json'
+                cucumber '**/target/cucumber-reports/json/*.json'
                 try{
                 emailext mimeType : 'text/html',
                 body:"""Automation Test Result ${env.JOB_NAME} is ${currentBuild.result}.
