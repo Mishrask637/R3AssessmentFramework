@@ -1,89 +1,104 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.APIAutomationFramework</groupId>
-  <artifactId>R3AssessmentFramework</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>com.APIAutomationFramework</groupId>
+	<artifactId>R3AssessmentFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>R3AssessmentFramework</name>
-  <url>http://maven.apache.org</url>
+	<name>R3AssessmentFramework</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-  <dependencies>
-    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-	<dependency>
-	    <groupId>io.rest-assured</groupId>
-	    <artifactId>rest-assured</artifactId>
-	    <version>5.4.0</version>
-	    <scope>test</scope>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
-	<dependency>
-	    <groupId>io.rest-assured</groupId>
-	    <artifactId>json-path</artifactId>
-	    <version>5.4.0</version>
-	    <scope>test</scope>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
-	<dependency>
-	    <groupId>io.rest-assured</groupId>
-	    <artifactId>json-schema-validator</artifactId>
-	    <version>5.4.0</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-	<dependency>
-	    <groupId>org.testng</groupId>
-	    <artifactId>testng</artifactId>
-	    <version>7.10.1</version>
-	    <scope>test</scope>
-	</dependency>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
+		</dependency>
 
-	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-	<dependency>
-	    <groupId>io.cucumber</groupId>
-	    <artifactId>cucumber-java</artifactId>
-	    <version>7.17.0</version>
-	</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>5.4.0</version>
+			<scope>test</scope>
+		</dependency>
 
-	
-	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-	<dependency>
-	    <groupId>io.cucumber</groupId>
-	    <artifactId>cucumber-testng</artifactId>
-	    <version>7.17.0</version>
-	</dependency>
+		<!--
+		https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>5.4.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.17.0</version>
+		</dependency>
 
 
-	<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-	<dependency>
-	    <groupId>net.masterthought</groupId>
-	    <artifactId>cucumber-reporting</artifactId>
-	    <version>5.8.0</version>
-	</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.17.0</version>
+		</dependency>
 
-  </dependencies>
 
-<build>
-    <pluginManagement>
-      <plugins> 
-			<plugin>
-			  <groupId>net.masterthought</groupId>
-			  <artifactId>cucumber-reporting</artifactId>
-			  <version>4.7.2</version>
-			  <configuration>
-			    <outputDirectory>target/cucumber-reports</outputDirectory>
-			    <jsonReport>target/cucumber-reports/Cucumber.json</jsonReport>
-			  </configuration>
-			</plugin>
-      </plugins>
-    </pluginManagement>
-</build>
+		<!--
+		https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.8.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>net.masterthought</groupId>
+					<artifactId>cucumber-reporting</artifactId>
+					<version>4.7.2</version>
+					<configuration>
+						<outputDirectory>target/cucumber-reports</outputDirectory>
+						<jsonReport>target/cucumber-reports/Cucumber.json</jsonReport>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.5</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suitexmlFile>testng.xml</suitexmlFile>
+						</suiteXmlFiles>
+						<parallel>ClassesAndMethods</parallel>
+						<threadCount>10</threadCount>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
